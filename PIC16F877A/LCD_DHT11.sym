@@ -1,0 +1,114 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-02F message1
+030-03E message2
+03F.0   Time_out
+03F.1   isLigado
+040     teste
+041     T_byte1
+042     T_byte2
+043     RH_byte1
+044     RH_byte2
+045     CheckSum
+046     MAIN.i
+047     lendoDados.i
+047     @DIV88.P1
+047     lcd_ini.conta
+047     MAIN.@SCRATCH1
+047     @PSTRINGC7_637.@SCRATCH1
+047     @PSTRINGR_637.@SCRATCH1
+048     @DIV88.P1
+048     lendoDados.k
+048     lcd_ini.@SCRATCH1
+048     @PSTRINGC7_637.@SCRATCH2
+048     @PSTRINGR_637.@SCRATCH2
+049     lendoDados._data
+049     @PSTRINGC7_637.@SCRATCH3
+049     @DIV88.@SCRATCH1
+04A     lcd_escreve.c
+04A     lendoDados.@SCRATCH1
+04A     @PSTRINGC7_637.@SCRATCH4
+04B     lcd_pos_xy.x
+04B     @delay_ms1.P1
+04C     lcd_pos_xy.y
+04D     lcd_pos_xy.endereco
+04E     lcd_pos_xy.@SCRATCH1
+04F     lcd_envia_byte.endereco
+050     lcd_envia_byte.dado
+051     lcd_envia_byte.@SCRATCH1
+052     lcd_envia_nibble.dado
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  INI_LCD.call
+000008  INI_LCD.data
+00000C  @const662.call
+000014  @const664.call
+00001A  @const666.call
+000023  @const675.call
+00002D  @const677.call
+000035  @const678.call
+000039  @delay_ms1
+00004D  lcd_envia_nibble
+000074  lcd_envia_byte
+000095  lcd_ini
+0000D2  lcd_escreve
+0000EC  lcd_pos_xy
+000109  @PSTRINGC7_637
+00015F  sinalInicial
+000173  obtendoResposta
+000194  lendoDados
+0001E3  @DIV88
+0001F8  @PSTRINGR_637
+00020E  MAIN
+00020E  @cinit1
+00021A  @cinit2
+000364  @const676.call
+
+Project Directory:
+    C:\Users\icaro\Documents\PIC16F877A\LCD_TEMP_UMI\PIC16F877A\
+
+Project Files:
+    LCD_DHT11.c                                             [13-out-22 00:09  CRC=0B2B5652]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [12-nov-13 14:35  CRC=81334808]
+    mod_lcd.c                                               [03-out-22 22:46  CRC=4ADD02A2]
+
+Source signature=2218A39E
+
+Units:
+    LCD_DHT11 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   LCD_DHT11.xsym
+    Errors:      LCD_DHT11.err
+    Ext Symbols: LCD_DHT11.esym
+    INHX8:       LCD_DHT11.hex
+    Symbols:     LCD_DHT11.sym
+    List:        LCD_DHT11.lst
+    Debug/COFF:  LCD_DHT11.cof
+    Project:     LCD_DHT11.ccspjt
+    Call Tree:   LCD_DHT11.tre
+    Statistics:  LCD_DHT11.STA

@@ -1,0 +1,25 @@
+[PROJECT]
+Target=LCD_DHT11.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.015
+Compiler=PCM
+CCSVersion=5.015
+[Target Data]
+FileList=LCD_DHT11.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[C:\Users\icaro\Documents\PIC16F877A\LCD_TEMP_UMI\PIC16F877A\LCD_DHT11]
+Type=4
+[mru-list]
+1=LCD_DHT11.c
+[Opened Files]
+1=LCD_DHT11.c
+2=
+3=LCD.C
+4=..\..\..\..\AppData\Local\Temp\Rar$DIa7856.35520\teclado.c
+5=
+[LCD_DHT11.c]
+Type=4
+[Units]
+Count=1
+1=LCD_DHT11 (main)

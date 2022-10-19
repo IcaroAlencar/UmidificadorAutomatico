@@ -1,0 +1,72 @@
+ÀÄLCD_DHT11
+   ÀÄMAIN  0/300  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄlcd_ini  0/61  Ram=2
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_envia_nibble  0/39  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_envia_nibble  0/39  Ram=1
+      ³  ÃÄ@const621  0/8  Ram=0
+      ³  ÀÄlcd_envia_byte  0/33  Ram=3
+      ³     ÃÄlcd_envia_nibble  0/39  Ram=1
+      ³     ÀÄlcd_envia_nibble  0/39  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÃÄlcd_escreve  0/55  Ram=1
+      ³  ³  ÃÄlcd_envia_byte  0/33  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ÃÄlcd_pos_xy  (Inline)  Ram=4
+      ³  ³  ³  ÀÄlcd_envia_byte  0/33  Ram=3
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄlcd_envia_byte  0/33  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄlcd_envia_byte  0/33  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÀÄlcd_escreve  0/55  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄsinalInicial  0/20  Ram=0
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄobtendoResposta  0/33  Ram=0
+      ÃÄlendoDados  0/79  Ram=4
+      ÃÄlendoDados  0/79  Ram=4
+      ÃÄlendoDados  0/79  Ram=4
+      ÃÄlendoDados  0/79  Ram=4
+      ÃÄlendoDados  0/79  Ram=4
+      ÃÄlcd_escreve  0/55  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@DIV88  0/21  Ram=3
+      ÃÄ@DIV88  0/21  Ram=3
+      ÃÄ@DIV88  0/21  Ram=3
+      ÃÄ@DIV88  0/21  Ram=3
+      ÃÄlcd_escreve  0/55  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGR_637  0/22  Ram=2
+      ³  ÀÄlcd_escreve  0/55  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_escreve  0/55  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGR_637  0/22  Ram=2
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_escreve  0/55  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_escreve  0/55  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC7_637  0/86  Ram=4
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/20  Ram=1
