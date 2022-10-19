@@ -12,5 +12,5 @@ foram utilizados para esse projeto:
 > - leds para mostrar o funcionamento do sistema e leitura da temperatura,
 > - capacitores e resistores.
 
-> O sistema faz a leitura da temperatura e umidade, mostra as informações no LCD, no caso em que a umidade esteja abaixo de 70%, o sistema 
-aciona o relé ligando o umidificador, no caso da umidade estar acima de 80%, o sitema desarma o relé desligando o umidificador.
+* O sistema faz a leitura da temperatura e umidade, mostra as informações no LCD, no caso em que a umidade esteja abaixo de 70%, o sistema 
+aciona o relé ligando o umidificador, no caso da umidade estar acima de 80%, o sitema desarma o relé desligando o umidificador. *
