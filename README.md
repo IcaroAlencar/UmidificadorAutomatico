@@ -1,5 +1,5 @@
 # Umidificador Automático
-###### Sistema que controla o acionamento do umidificador com base na umidade.
+##Sistema que controla o acionamento do umidificador com base na umidade.
 
 Projeto desenvolvido na disciplina de microcontroladores, com o objetivo de controlar o acionamento de umidificadores,
 foram utilizados para esse projeto:
