@@ -3,7 +3,7 @@
 
 Projeto desenvolvido na disciplina de **microcontroladores, com o objetivo de controlar o acionamento de umidificadores**,
 foram utilizados para esse projeto:
-> **1 PIC16F877A,
+> ** 1 PIC16F877A,
 > 1 LCD 1602 para mostrar a temperatura e umidade,
 > 1 Sensor de temperatura e umidade (DHT11),
 > 1 modulo relé 5v,
