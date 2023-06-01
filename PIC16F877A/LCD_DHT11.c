@@ -29,22 +29,22 @@ short int isLigado = 0;
 
 unsigned int8 T_byte1, T_byte2, RH_byte1, RH_byte2, CheckSum ;
 
-// Envia um sinal para inciar a comunicação entre o pic e o sensor DHT11
+// Envia um sinal para inciar a comunicaï¿½ï¿½o entre o pic e o sensor DHT11
 void sinalInicial(){
-   output_drive(DHT11_PIN);   // ajustando o pino de conexão como saída 
-   output_low(DHT11_PIN);     // ajustando a saída do pino de conexão para baixo 
+   output_drive(DHT11_PIN);   // ajustando o pino de conexï¿½o como saï¿½da 
+   output_low(DHT11_PIN);     // ajustando a saï¿½da do pino de conexï¿½o para baixo 
    delay_ms(18);
-   output_high(DHT11_PIN);    // ajustando a saída do pino de conexão para alto
+   output_high(DHT11_PIN);    // ajustando a saï¿½da do pino de conexï¿½o para alto
    delay_us(20);
-   output_float(DHT11_PIN);   // ajustadno o pino de conexão para o modo de entrada
+   output_float(DHT11_PIN);   // ajustadno o pino de conexï¿½o para o modo de entrada
 }
 
 // Recebe uma resposta do sensor DHT11
 short obtendoResposta(){
    delay_us(40);
-   if(!input(DHT11_PIN)){        // lendo e testando se a conexão do pino está em baixa
+   if(!input(DHT11_PIN)){        // lendo e testando se a conexï¿½o do pino estï¿½ em baixa
       delay_us(80);
-      if(input(DHT11_PIN)){      // lendo e testando se a conexão do pino está em alta
+      if(input(DHT11_PIN)){      // lendo e testando se a conexï¿½o do pino estï¿½ em alta
          delay_us(50);
          return 1;               // Tudo Certo retorna 1
       }else{
@@ -57,12 +57,12 @@ short obtendoResposta(){
 
 // Faz a leitura dos dados enviados pelo sensor DHT11
 unsigned int8 lendoDados(){
-   unsigned int8 i, k, _data = 0;        // k é usado para contar a duração da leitura de 1 bit
+   unsigned int8 i, k, _data = 0;        // k ï¿½ usado para contar a duraï¿½ï¿½o da leitura de 1 bit
    if(Time_out)
       break;
    for(i = 0; i < 8; i++){
       k = 0;
-      while(!input(DHT11_PIN)){           // Aguarde até que o pino DHT11 seja levantado
+      while(!input(DHT11_PIN)){           // Aguarde atï¿½ que o pino DHT11 seja levantado
          k++;
          if(k > 100){
             Time_out = 1;
@@ -75,7 +75,7 @@ unsigned int8 lendoDados(){
          bit_clear(_data, (7 - i));        // Limpa o bit (7 - i)
       else{
          bit_set(_data, (7 - i));          // ajusta o bit (7 - i)
-         while(input(DHT11_PIN)){          // Aguarde até que o pino DHT11 fique baixo
+         while(input(DHT11_PIN)){          // Aguarde atï¿½ que o pino DHT11 fique baixo
             k++;
             if(k > 100){
                Time_out = 1;
@@ -96,7 +96,7 @@ void main(){
    printf (lcd_escreve,"\f Iniciando..."); 
    delay_ms(1000);
    
-   output_drive(OUT);                           // ajustando o pino de conexão como saída 
+   output_drive(OUT);                           // ajustando o pino de conexï¿½o como saï¿½da 
    output_low(LED);                             // Desligando o led de leitura
   
    while(TRUE){
@@ -130,7 +130,7 @@ void main(){
                message1[7]  = T_Byte1/10  + 48;  // pega o inteiro divide por 10 pra pegar apenas a casa decimal, depois soma 48 pra pega o valor da tabela ascii
                message1[8]  = T_Byte1%10  + 48;
                message1[10] = T_Byte2     + 48;
-               message1[11] = 223;                   // Simbolo de Graus º
+               message1[11] = 223;                   // Simbolo de Graus ï¿½
                
                // Umidade
                message2[7]  = RH_Byte1/10 + 48;
@@ -142,7 +142,7 @@ void main(){
                printf(lcd_escreve,"\n%s", message2);
                delay_ms(10);
                
-               // Verifica se a umidade esta abaixo de 30º, se for verdadeiro liga o rele, se nao desliga o rele
+               // Verifica se a umidade esta abaixo de 70%, se for verdadeiro liga o rele, se nao desliga o rele
                if(RH_Byte1 <= 70 && isLigado == 0){
                   output_toggle(OUT); 
                   isLigado = 1;
